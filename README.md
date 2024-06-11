@@ -1,4 +1,4 @@
-# Projet Final B3 Cybersécurité Paris Ynov Campus 2023- IDS/WAF Securisation de la couche 7(Application)🛡️
+# Projet Final Cybersécurité : IDS/WAF Securisation de la couche 7(Application)🛡️
 Ce projet vise à améliorer la sécurité de la partie application de Open Systems Interconnection en locurence le protocole HTTP qui est utilisé pour la communication entre les client Web et les serveurs. Pour un deployment simplifié stable on ce base sur le framework de dev. Web Flask, le but de l'exercice est de deployer un eventaille de techniques et fonctionnalitées de securité pour pré-munir les actions malveillantes lié à la couche 7, en détectant et bloquant les attaques par force brute, les injections SQL, les ataques XSS et Les agents d'automatisation d'attaque connu en Cyber-Sécurité. ET fournir également un système de logging pour garder une trace des requêtes malveillantes et des adresses IP associées, comportement correspondant à un WAF (Web Application Firewall).
 
 ## Membres de l'equipe
