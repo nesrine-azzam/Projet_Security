@@ -1,0 +1,72 @@
+2023-04-25 16:44:15 [WARNING] -  * Debugger is active!
+2023-04-25 16:44:15 [INFO] -  * Debugger PIN: 342-851-992
+2023-04-25 16:44:24 [INFO] - 127.0.0.1 - - [25/Apr/2023 16:44:24] "POST /login HTTP/1.1" 200 -
+2023-04-25 16:44:29 [INFO] - 127.0.0.1 - - [25/Apr/2023 16:44:29] "POST /login HTTP/1.1" 200 -
+2023-04-25 16:44:30 [INFO] - 127.0.0.1 - - [25/Apr/2023 16:44:30] "POST /login HTTP/1.1" 200 -
+2023-04-25 16:44:30 [INFO] - 127.0.0.1 - - [25/Apr/2023 16:44:30] "POST /login HTTP/1.1" 200 -
+2023-04-25 16:44:30 [WARNING] - Brute force attack detected for user 'test@test.fr' from IP '127.0.0.1'
+2023-04-25 16:44:30 [INFO] - 127.0.0.1 - - [25/Apr/2023 16:44:30] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2023-04-25 16:45:04 [WARNING] - SQL injection detected from IP '127.0.0.1'. Username: 'test@test.fr' or 1=1', Password: '"e"e'
+2023-04-25 16:45:04 [INFO] - 127.0.0.1 - - [25/Apr/2023 16:45:04] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2023-04-26 14:23:10 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-26 14:23:10 [INFO] - [33mPress CTRL+C to quit[0m
+2023-04-26 14:23:10 [INFO] -  * Restarting with stat
+2023-04-26 14:23:11 [WARNING] -  * Debugger is active!
+2023-04-26 14:23:11 [INFO] -  * Debugger PIN: 342-851-992
+2023-04-26 14:23:32 [WARNING] - SQL injection detected from IP '127.0.0.1'. Username: 'test@test.fr' or 1=1', Password: 'vbvb'
+2023-04-26 14:23:32 [INFO] - 127.0.0.1 - - [26/Apr/2023 14:23:32] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2023-04-26 14:23:44 [INFO] - 127.0.0.1 - - [26/Apr/2023 14:23:44] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2023-04-26 14:37:08 [INFO] -  * Detected change in '/home/test1/ProjectFtest3/http_logger.py', reloading
+2023-04-26 14:37:08 [INFO] -  * Restarting with stat
+2023-04-26 14:37:08 [WARNING] -  * Debugger is active!
+2023-04-26 14:37:08 [INFO] -  * Debugger PIN: 342-851-992
+2023-04-26 16:26:03 [WARNING] - Brute force attack detected for Account: 'test@test.fr' from IP: '127.0.0.1'
+2023-04-26 16:29:57 [WARNING] - SQL injection detected from IP: '127.0.0.1'. Account: 'test@test.fr' or 1=1', Password: 'rgfr'
+2023-05-02 13:29:13 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 13:29:13 [INFO] - [33mPress CTRL+C to quit[0m
+2023-05-02 13:29:13 [INFO] -  * Restarting with stat
+2023-05-02 13:29:14 [WARNING] -  * Debugger is active!
+2023-05-02 13:29:14 [INFO] -  * Debugger PIN: 108-837-551
+2023-05-02 14:54:06 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 14:54:06 [INFO] - [33mPress CTRL+C to quit[0m
+2023-05-02 14:54:06 [INFO] -  * Restarting with stat
+2023-05-02 14:54:07 [WARNING] -  * Debugger is active!
+2023-05-02 14:54:07 [INFO] -  * Debugger PIN: 108-837-551
+2023-05-02 14:54:53 [INFO] -  * Detected change in 'C:\\Users\\jorge\\OneDrive\\Documents\\B3\\ProjetFinal\\Projet-Secu-B3Ynov\\Jorge\\app.py', reloading
+2023-05-02 14:54:53 [INFO] -  * Restarting with stat
+2023-05-02 14:54:54 [WARNING] -  * Debugger is active!
+2023-05-02 14:54:54 [INFO] -  * Debugger PIN: 108-837-551
+2023-05-02 14:54:59 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 14:54:59 [INFO] - [33mPress CTRL+C to quit[0m
+2023-05-02 14:54:59 [INFO] -  * Restarting with stat
+2023-05-02 14:55:00 [WARNING] -  * Debugger is active!
+2023-05-02 14:55:00 [INFO] -  * Debugger PIN: 108-837-551
+2023-05-02 15:03:14 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 15:03:14 [INFO] - [33mPress CTRL+C to quit[0m
+2023-05-02 15:03:14 [INFO] -  * Restarting with stat
+2023-05-02 15:03:15 [WARNING] -  * Debugger is active!
+2023-05-02 15:03:15 [INFO] -  * Debugger PIN: 108-837-551
+2023-05-02 15:12:57 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-05-02 15:12:57 [INFO] - [33mPress CTRL+C to quit[0m
+2023-05-02 15:12:57 [INFO] -  * Restarting with stat
+2023-05-02 15:12:58 [WARNING] -  * Debugger is active!
+2023-05-02 15:12:58 [INFO] -  * Debugger PIN: 108-837-551
+2023-05-02 15:13:29 [INFO] -  * Detected change in 'C:\\Users\\jorge\\OneDrive\\Documents\\B3\\ProjetFinal\\Projet-Secu-B3Ynov\\Jorge\\app.py', reloading
+2023-05-14 03:21:40 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.87:5000
+2023-05-14 03:21:40 [INFO] - [33mPress CTRL+C to quit[0m
+2023-05-14 03:21:40 [INFO] -  * Restarting with stat
+2023-05-14 03:21:41 [WARNING] -  * Debugger is active!
+2023-05-14 03:21:41 [INFO] -  * Debugger PIN: 108-837-551
+2023-05-14 03:21:45 [INFO] - 127.0.0.1 - - [14/May/2023 03:21:45] "[33mGET /login HTTP/1.1[0m" 404 -
+2023-05-14 03:21:50 [INFO] - 127.0.0.1 - - [14/May/2023 03:21:50] "GET / HTTP/1.1" 200 -
+2023-05-14 03:21:50 [INFO] - 127.0.0.1 - - [14/May/2023 03:21:50] "GET /captcha HTTP/1.1" 200 -
+2023-05-14 03:21:50 [INFO] - 127.0.0.1 - - [14/May/2023 03:21:50] "[36mGET /static/loop-arrow.png HTTP/1.1[0m" 304 -

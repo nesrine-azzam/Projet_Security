@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Encadrement transparent */
+    border-radius: 5px;
+}
+
+input, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #007bffc2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.input-field {
+    text-align: center;
+}
+
+#captcha-section{
+    display: none;
+    margin-top: 20px;
+}
+
+p{
+    display: block;
+    position: absolute;
+    top: 20%;
+    font-size: x-large;
+    color: red;
+}
+</style>
+
+<div class="form-container">
+    <h1><img src="../static/pirate-skull.png" alt=""></h1>
+    <form method="POST" action="" class="form-group" id="login-form">
+        {{ form.hidden_tag() }}
+        <div class="input-field">
+            {{ form.username.label }} {{ form.username }}
+        </div>
+        <div class="input-field">
+            {{ form.password.label }} {{ form.password }}
+        </div>
+        <div id="captcha-section">
+        {% if session.get('show_captcha', default=False) %}
+            {% if session.get('login_attempts', default=0) >= 8 %}
+            <div class="input-field">
+                {{ form.captcha.label }}
+            </div>
+            <div class="input-field">
+                <img src="{{ url_for('captcha') }}" alt="captcha" id="captcha-img">
+                <input type="image" src="{{ url_for('static', filename='loop-arrow.png') }}" alt="Reload CAPTCHA" onclick="reloadCaptcha()" style="width: 10px;">
+            </div>
+            <div class="input-field">
+                {{ form.captcha }}
+                {% for error in form.captcha.errors %}
+                <span class="text-danger">{{ error }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        {% endif %}
+        </div>
+        <div class="input-field form-submit">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+    <h4>Not registered yet? <a href="#" onclick="alert('malheureusement tu ne peux pas t\'enregistrer, tout ce que tu dois faire c\'est reussir à rentrer dans le Dashboard.\n\n le capitaine du Site à mal configuré le compte administrateur et à laisser Admin par default comme Username, à toi de voir si tu peux exploité cette mégarde!\n\n A L\'ABORDAAAAAAGE !!!! ')">Sign Up</a></h4>
+</div>
+
+<script>
+var counter = 0
+var captchaShown = false;
+
+function reloadCaptcha() {
+    document.getElementById("captcha-img").src = "{{ url_for('captcha') }}?" + new Date().getTime();
+}
+
+
+window.onload = function() {
+    var loginAttempts = {{ session.get('login_attempts', default=0) }};
+    if (loginAttempts >= 3) {
+        document.getElementById('captcha-section').style.display = 'block';
+        reloadCaptcha(); // You might want to reload the captcha when it's being shown.
+    }
+    else {
+        document.getElementById('captcha-section').style.display = 'none';
+    }
+}
+
+
+</script>
+
+{% endblock %}
